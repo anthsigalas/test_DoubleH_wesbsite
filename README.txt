@@ -126,3 +126,11 @@ v33 branding update (20 Sep 2026)
 - Replaced all live header/standalone Double Honour logo artwork with the latest supplied transparent logo files.
 - Footer and standalone thank-you logo use the latest light transparent version with “1 TIMOTHY 5:17” beneath the wordmark; navigation headers remain the compact no-message version for clarity at smaller sizes.
 - Added all supplied dark/light, background/transparent, with/without-message logo variants to assets for future use.
+
+
+Version v43 — 30 Sep 2026:
+- Based on the responsive/fluid v42 build (not the static-size v41 build).
+- Increased the shared desktop/laptop left and right content gutters across all pages so wide layouts retain more breathing room.
+- Kept the layout fluid and preserved the v42 wide-screen content cap; full-width backgrounds/images remain full bleed.
+- Aligned the Home hero content to the same revised horizontal gutter.
+- Tablet/phone spacing remains unchanged.

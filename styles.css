@@ -1650,9 +1650,30 @@ fieldset.form-question { min-width: 0; }
   :root {
     --max: 1460px;
   }
+}
+
+/* v43 — 30 Sep 2026: restore deliberate horizontal breathing room to the fluid layout.
+   The responsive v42 layout remains fluid, but desktop/laptop content now keeps a
+   larger left/right gutter across every page. Full-bleed section backgrounds and
+   imagery remain full width; only the shared content shell is inset. */
+@media (min-width: 981px) {
+  :root {
+    --desktop-page-gutter: clamp(48px, 4.5vw, 68px);
+  }
 
   .shell,
   #challenge .shell {
-    width: min(calc(100% - clamp(64px, 5vw, 88px)), var(--max));
+    width: min(
+      calc(100% - var(--desktop-page-gutter) - var(--desktop-page-gutter)),
+      var(--max)
+    );
+  }
+
+  /* The Home hero has its own wider cap, so keep it aligned to the same page gutter. */
+  .hero-content {
+    width: min(
+      calc(100% - var(--desktop-page-gutter) - var(--desktop-page-gutter)),
+      1540px
+    );
   }
 }
