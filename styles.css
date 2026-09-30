@@ -1642,38 +1642,168 @@ fieldset.form-question { min-width: 0; }
   }
 }
 
-/* v42 — 23 Sep 2026: fluid desktop-width pass.
-   Preserve the existing layout through standard laptop widths, then use more
-   of the viewport on wider laptops/desktops while retaining a designed cap.
-   Text blocks that already have intentional max-widths remain constrained for readability. */
-@media (min-width: 1280px) {
-  :root {
-    --max: 1460px;
+
+/* v44 — based strictly on v41 static content layout.
+   Only the persistent top navigation and bottom footer expand with viewport width. */
+:root {
+  --edge-layer-total-gutter: clamp(64px, 8vw, 220px);
+}
+
+/* Persistent, identical coloured navigation bar on every standard page. */
+.site-header,
+.site-header.on-light {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  color: var(--cream);
+  background: var(--brown);
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 2px 14px rgba(43,26,16,.08);
+}
+
+/* Keep the header controls consistent even on pages previously marked on-light. */
+.site-header.on-light .menu-button {
+  border-color: rgba(255,255,255,.5);
+}
+.site-header.on-light .menu-button span {
+  background: var(--cream);
+}
+.site-header.on-light .button-small {
+  color: var(--cream);
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.55);
+}
+.site-header.on-light .button-small:hover {
+  color: var(--brown);
+  background: var(--cream);
+}
+
+/* Header and footer alone use the wider responsive shell. All body content stays v41-static. */
+.site-header .header-inner,
+.site-footer > .shell,
+.thanks-legal-footer > .shell {
+  width: calc(100% - var(--edge-layer-total-gutter));
+  max-width: none;
+  margin-inline: auto;
+}
+
+/* Fixed navigation should not cover anchored sections when jumping within a page. */
+html {
+  scroll-padding-top: 112px;
+}
+
+@media (max-width: 720px) {
+  .site-header .header-inner,
+  .site-footer > .shell,
+  .thanks-legal-footer > .shell {
+    width: calc(100% - 32px);
+  }
+  html {
+    scroll-padding-top: 92px;
   }
 }
 
-/* v43 — 30 Sep 2026: restore deliberate horizontal breathing room to the fluid layout.
-   The responsive v42 layout remains fluid, but desktop/laptop content now keeps a
-   larger left/right gutter across every page. Full-bleed section backgrounds and
-   imagery remain full width; only the shared content shell is inset. */
-@media (min-width: 981px) {
-  :root {
-    --desktop-page-gutter: clamp(48px, 4.5vw, 68px);
+/* v45 — 30 Sep 2026: cream persistent header across all pages.
+   Keeps the v44/v41 static body layout and responsive edge-layer behaviour unchanged. */
+.site-header,
+.site-header.on-light {
+  color: var(--brown);
+  background: var(--cream);
+  border-bottom: 1px solid rgba(43,26,16,.16);
+  box-shadow: 0 2px 14px rgba(43,26,16,.08);
+}
+
+.site-header .desktop-nav a,
+.site-header.on-light .desktop-nav a {
+  color: var(--brown);
+}
+
+.site-header .menu-button,
+.site-header.on-light .menu-button {
+  border-color: rgba(43,26,16,.38);
+}
+.site-header .menu-button span,
+.site-header.on-light .menu-button span {
+  background: var(--brown);
+}
+
+.site-header .button-small,
+.site-header.on-light .button-small {
+  color: var(--brown);
+  background: rgba(255,255,255,.18);
+  border-color: rgba(43,26,16,.38);
+}
+.site-header .button-small:hover,
+.site-header.on-light .button-small:hover {
+  color: var(--cream);
+  background: var(--brown);
+  border-color: var(--brown);
+}
+
+/* v47 — 30 Sep 2026: slimmer very-light-cream persistent header across all pages.
+   Uses the website's existing light cream (#FFFDF9), while keeping the v41 static body layout plus the v44 responsive header/footer width behaviour. */
+.site-header,
+.site-header.on-light {
+  color: var(--brown);
+  background: #FFFDF9;
+  border-bottom: 1px solid rgba(43,26,16,.12);
+  box-shadow: 0 2px 10px rgba(43,26,16,.06);
+}
+
+.site-header .header-inner,
+.site-header.on-light .header-inner {
+  height: 70px;
+}
+
+.site-header .brand-mark,
+.site-header.on-light .brand-mark {
+  width: 150px;
+}
+
+.site-header .desktop-nav a,
+.site-header.on-light .desktop-nav a {
+  color: var(--brown);
+}
+
+.site-header .menu-button,
+.site-header.on-light .menu-button {
+  border-color: rgba(43,26,16,.32);
+}
+.site-header .menu-button span,
+.site-header.on-light .menu-button span {
+  background: var(--brown);
+}
+
+.site-header .button-small,
+.site-header.on-light .button-small {
+  min-height: 38px;
+  color: var(--brown);
+  background: transparent;
+  border-color: rgba(43,26,16,.34);
+}
+.site-header .button-small:hover,
+.site-header.on-light .button-small:hover {
+  color: #FFFFFF;
+  background: var(--brown);
+  border-color: var(--brown);
+}
+
+html {
+  scroll-padding-top: 88px;
+}
+
+@media (max-width: 720px) {
+  .site-header .header-inner,
+  .site-header.on-light .header-inner {
+    height: 64px;
   }
 
-  .shell,
-  #challenge .shell {
-    width: min(
-      calc(100% - var(--desktop-page-gutter) - var(--desktop-page-gutter)),
-      var(--max)
-    );
+  .site-header .brand-mark,
+  .site-header.on-light .brand-mark {
+    width: 138px;
   }
 
-  /* The Home hero has its own wider cap, so keep it aligned to the same page gutter. */
-  .hero-content {
-    width: min(
-      calc(100% - var(--desktop-page-gutter) - var(--desktop-page-gutter)),
-      1540px
-    );
+  html {
+    scroll-padding-top: 80px;
   }
 }

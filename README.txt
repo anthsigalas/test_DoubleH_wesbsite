@@ -127,10 +127,6 @@ v33 branding update (20 Sep 2026)
 - Footer and standalone thank-you logo use the latest light transparent version with “1 TIMOTHY 5:17” beneath the wordmark; navigation headers remain the compact no-message version for clarity at smaller sizes.
 - Added all supplied dark/light, background/transparent, with/without-message logo variants to assets for future use.
 
+V46 (30 Sep 2026): based on v45/v41 static core; fixed header changed to white and reduced to 70px desktop / 64px mobile. Body layout and responsive header/footer widths unchanged.
 
-Version v43 — 30 Sep 2026:
-- Based on the responsive/fluid v42 build (not the static-size v41 build).
-- Increased the shared desktop/laptop left and right content gutters across all pages so wide layouts retain more breathing room.
-- Kept the layout fluid and preserved the v42 wide-screen content cap; full-width backgrounds/images remain full bleed.
-- Aligned the Home hero content to the same revised horizontal gutter.
-- Tablet/phone spacing remains unchanged.
+V47 (30 Sep 2026): based on v46; fixed header background changed from pure white to the website's very light cream #FFFDF9. Header remains slim and fixed.
