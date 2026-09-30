@@ -1641,3 +1641,18 @@ fieldset.form-question { min-width: 0; }
     display: none !important;
   }
 }
+
+/* v42 — 23 Sep 2026: fluid desktop-width pass.
+   Preserve the existing layout through standard laptop widths, then use more
+   of the viewport on wider laptops/desktops while retaining a designed cap.
+   Text blocks that already have intentional max-widths remain constrained for readability. */
+@media (min-width: 1280px) {
+  :root {
+    --max: 1460px;
+  }
+
+  .shell,
+  #challenge .shell {
+    width: min(calc(100% - clamp(64px, 5vw, 88px)), var(--max));
+  }
+}
