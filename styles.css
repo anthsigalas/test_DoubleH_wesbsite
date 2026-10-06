@@ -2580,3 +2580,58 @@ html {
 #team .team-intro {
   transform: translateY(10px);
 }
+
+/* v75 — mobile spacing, natural text wrapping and readable funding notes.
+   Hidden spacer spans preserve every desktop line break and word position. */
+.mobile-word-space { display: none; }
+@media (max-width: 720px) {
+  .mobile-word-space { display: inline; }
+
+  main,
+  .site-footer { overflow-wrap: anywhere; }
+  main > section,
+  main .shell,
+  .shell > *,
+  .contact-grid > *,
+  .footer-top > *,
+  .about-grid > *,
+  .help-grid > *,
+  .funding-gap-layout > *,
+  .faq-layout > *,
+  .form-row > *,
+  .team-card-header > * { min-width: 0; }
+
+  .service-fixed-line,
+  .about-values-one-line,
+  .about-name-practical,
+  .about-name-body-line,
+  .about-hero-title span { white-space: normal; }
+  .about-name-verse .about-quote-line {
+    display: inline;
+    white-space: normal;
+  }
+
+  #our-name { padding-bottom: 64px; }
+  #our-name .about-name-church { display: none; }
+
+  .legal-complexity-copy h3 {
+    font-size: clamp(26px, 2.45vw, 32px);
+    line-height: 1.22;
+  }
+  .source-detail {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .source-segment { padding-inline: 12px; }
+
+  #team .team-card-header {
+    grid-template-columns: clamp(92px, 28vw, 116px) minmax(0, 1fr);
+    gap: clamp(12px, 4vw, 16px);
+  }
+  #team .team-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 116 / 146;
+  }
+  #team .team-name-line { white-space: normal; }
+}

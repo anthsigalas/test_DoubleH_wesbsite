@@ -212,3 +212,5 @@ V72: Restored the original v61 team card layout, with biographies below the phot
 V73: Lowered the Our name church image to align its bottom edge with the colour-change boundary at the next subsection.
 
 V74: Restored Our name bottom spacing to the standard 88px desktop section spacing, keeping the church image anchored at bottom: 0. Slightly enlarged the desktop image from 52% (max 800px) to 54% (max 830px). On phones, added the standard 64px spacing before the image so it continues to meet the next section boundary.
+
+V75: Mobile-only refinements (up to 720px): added hidden-on-desktop spaces where desktop line breaks disappear, prevented text/grid overflow, allowed the quotation to wrap naturally, hid the Our name church image and restored 64px bottom spacing, matched Legal complexity to the recommendation statement size, and increased Sources explanatory notes to 18px body text. Responsive profile headers accommodate narrow screens. Browser validation with Manrope covered all eight content pages at 320, 375, 390, 430 and 720px, with FAQ answers expanded. Desktop geometry and typography matched v74 at 1280 and 1440px for all eight pages.
