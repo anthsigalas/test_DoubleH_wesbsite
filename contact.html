@@ -1,133 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Double Honour to discuss church property funding, manse finance and property acquisition support.">
-  <title>Double Honour</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Contact Double Honour to discuss church property funding, manse finance and property acquisition support." name="description"/>
+<title>Double Honour</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header on-light">
-    <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Double Honour home"><img class="brand-mark" src="assets/double-honour-dark.png" alt="Double Honour"></a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="our-service.html">Our service</a>
-        <a href="about.html">About us</a>
-        <a href="faq.html">FAQs</a>
-      </nav>
-      <a class="button button-small desktop-contact" href="contact.html">Contact us</a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span><span></span></button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <nav aria-label="Mobile navigation">
-        <a href="index.html">Home</a>
-        <a href="our-service.html">Our service</a>
-        <a href="about.html">About us</a>
-        <a href="faq.html">FAQs</a>
-        <a href="contact.html">Contact us</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="contact-page">
-      <div class="shell contact-page-grid">
-        <div class="contact-intro">
-          <p class="eyebrow">Contact us</p>
-          <h1>Start with your church's circumstances</h1>
-          <p>Every church is different. Tell us what you are considering, where your funding currently stands and the type of property you are looking for. Double Honour can then explore whether and how we may be able to help.</p>
-          <div class="contact-direct"><span>Prefer email?</span><a href="mailto:info@housingaffordability.co">info@housingaffordability.co</a></div>
-        </div>
-
-        <form class="contact-form" action="https://formsubmit.co/info@housingaffordability.co" method="POST">
-          <input type="hidden" name="_subject" value="New Double Honour website enquiry">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://www.housingaffordability.co/thanks.html">
-          <div class="honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
-          <p class="required-note"><span class="required-mark" aria-hidden="true">*</span> Required fields</p>
-          <div class="form-row">
-            <div class="form-field"><label for="name">Your name <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
-            <div class="form-field"><label for="email">Email address <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          </div>
-          <div class="form-row">
-            <div class="form-field"><label for="organisation">Church / organisation <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></label><input id="organisation" name="organisation" type="text" autocomplete="organization" required></div>
-            <div class="form-field"><label for="phone">Phone number <span aria-hidden="true">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-          </div>
-          <div class="form-field"><label for="enquiry">What can we help with? <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></label><select id="enquiry" name="enquiry_type" required><option value="" selected disabled>Select an option</option><option>Buying a home for a minister</option><option>Church network / denomination property strategy</option><option>Funding gap / financing</option><option>Property search and acquisition support</option><option>General enquiry</option></select></div>
-
-          <div class="form-question form-gate">
-            <label class="form-check">
-              <input type="checkbox" name="evangelical_alliance_statement_of_faith" value="Yes" required>
-              <span>Does your church endorse this <a href="https://www.eauk.org/about-us/how-we-work/basis-of-faith" target="_blank" rel="noopener noreferrer">Statement of Faith by the Evangelical Alliance</a>? <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></span>
-            </label>
-          </div>
-
-          <div class="form-question form-gate">
-            <label class="form-check">
-              <input type="checkbox" name="uk_based" value="Yes" required>
-              <span>Is your church based in the UK? <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></span>
-            </label>
-          </div>
-
-          <div class="form-question" role="radiogroup" aria-labelledby="deposit-question">
-            <p class="form-question-title" id="deposit-question">Does your church have a deposit amounting to at least 10–20% of the anticipated house price and an established and stable congregation with regular giving? <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></p>
-            <div class="form-options">
-              <label><input type="radio" name="deposit_and_stable_giving" value="Yes" required><span>Yes</span></label>
-              <label><input type="radio" name="deposit_and_stable_giving" value="No"><span>No</span></label>
-              <label><input type="radio" name="deposit_and_stable_giving" value="Don't know"><span>Don't know</span></label>
-            </div>
-          </div>
-
-          <div class="form-question" role="radiogroup" aria-labelledby="project-leader-question">
-            <p class="form-question-title" id="project-leader-question">Does your church have a project leader who is experienced in property, finance, and project management? <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></p>
-            <div class="form-options">
-              <label><input type="radio" name="experienced_project_leader" value="Yes" required><span>Yes</span></label>
-              <label><input type="radio" name="experienced_project_leader" value="No"><span>No</span></label>
-              <label><input type="radio" name="experienced_project_leader" value="Don't know"><span>Don't know</span></label>
-            </div>
-          </div>
-          <div class="form-field"><label for="message">Tell us a little about your situation <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></label><textarea id="message" name="message" required placeholder="For example: where you are looking, whether you have identified a property, your current savings / fundraising position and any bank funding already discussed."></textarea></div>
-          <label class="form-consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree that Double Honour may use the information I provide to respond to this enquiry. <span class="required-mark" aria-hidden="true">*</span><span class="sr-only"> required</span></span></label>
-          <button class="button" type="submit">Send enquiry</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="shell footer-top">
-      <div class="footer-brand">
-        <img class="footer-brand-mark" src="assets/double-honour-light-message.png" alt="Double Honour">
-        <p>Helping churches and church networks<br class="desktop-br">purchase property sooner</p>
-        <a class="footer-contact" href="mailto:info@housingaffordability.co">info@housingaffordability.co</a>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="our-service.html">Our service</a>
-        <a href="about.html">About us</a>
-        <a href="faq.html">FAQs</a>
-        <a class="button button-small footer-contact-button" href="contact.html">Contact us</a>
-      </div>
-    </div>
-    <div class="shell footer-bottom">
-      <span>© <span data-year></span> Double Honour</span>
-      <div class="footer-legal">
-        <a href="cookie-policy.html">Cookie Policy</a>
-        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </div>
-    </div>
-
-    <div class="shell footer-notices" aria-label="Company and regulatory information">
-      <p>Double Honour is a trading name of Housing Affordability Finance (HAF) Ltd. Registered in England and Wales (Company No. 12096242) with its registered office at 167–169 Great Portland Street, 5th Floor, London, W1W 5PF.</p>
-      <p>The services provided by Double Honour are not regulated by the Financial Conduct Authority. Accordingly, the information on this website is provided for general information purposes only and should not be relied upon as financial, legal, tax or investment advice or as the basis for making any financial or lending decision.</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header on-light">
+<div class="shell header-inner">
+<a aria-label="Double Honour home" class="brand" href="index.html"><img alt="Double Honour" class="brand-mark" src="assets/double-honour-dark.png"/></a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="our-service.html">Our service</a>
+<a href="about.html">About us</a>
+<a href="faq.html">FAQs</a>
+</nav>
+<a class="button button-small desktop-contact" href="contact.html">Contact us</a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu" hidden="" id="mobile-menu">
+<nav aria-label="Mobile navigation">
+<a href="index.html">Home</a>
+<a href="our-service.html">Our service</a>
+<a href="about.html">About us</a>
+<a href="faq.html">FAQs</a>
+<a href="contact.html">Contact us</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="contact-page">
+<div class="shell contact-page-grid">
+<div class="contact-intro">
+<p class="eyebrow">Contact us</p>
+<h1>Start with<br class="desktop-br"/>your church’s<br class="desktop-br"/>circumstances</h1>
+<p>Every church is different. Tell us what you are considering, where your funding currently stands and the type of property you are looking for. Double Honour can then explore whether and how we may be able to help.</p>
+<div class="contact-direct"><span>Prefer email?</span><a href="mailto:info@doublehonour.com">info@doublehonour.com</a></div>
+</div>
+<form action="https://formsubmit.co/info@doublehonour.com" class="contact-form" method="POST">
+<input name="_subject" type="hidden" value="New Double Honour website enquiry"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_next" type="hidden" value="https://www.housingaffordability.co/thanks.html"/>
+<div aria-hidden="true" class="honeypot"><label>Leave this field empty<input autocomplete="off" name="_honey" tabindex="-1" type="text"/></label></div>
+<p class="required-note"><span aria-hidden="true" class="required-mark">*</span> Required fields</p>
+<div class="form-row">
+<div class="form-field"><label for="name">Your name <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></label><input autocomplete="name" id="name" name="name" required="" type="text"/></div>
+<div class="form-field"><label for="email">Email address <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></label><input autocomplete="email" id="email" name="email" required="" type="email"/></div>
+</div>
+<div class="form-row">
+<div class="form-field"><label for="organisation">Church / organisation <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></label><input autocomplete="organization" id="organisation" name="organisation" required="" type="text"/></div>
+<div class="form-field"><label for="phone">Phone number <span aria-hidden="true">(optional)</span></label><input autocomplete="tel" id="phone" name="phone" type="tel"/></div>
+</div>
+<div class="form-field"><label for="enquiry">What can we help with? <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></label><select id="enquiry" name="enquiry_type" required=""><option disabled="" selected="" value="">Select an option</option><option>Buying a home for a minister</option><option>Church network / denomination property strategy</option><option>Funding gap / financing</option><option>Property search and acquisition support</option><option>General enquiry</option></select></div>
+<div class="form-question form-gate">
+<label class="form-check">
+<input name="evangelical_alliance_statement_of_faith" required="" type="checkbox" value="Yes"/>
+<span>Does your church endorse this <a href="https://www.eauk.org/about-us/how-we-work/basis-of-faith" rel="noopener noreferrer" target="_blank">Statement of Faith by the Evangelical Alliance</a>? <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></span>
+</label>
+</div>
+<div class="form-question form-gate">
+<label class="form-check">
+<input name="uk_based" required="" type="checkbox" value="Yes"/>
+<span>Is your church based in the UK? <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></span>
+</label>
+</div>
+<div aria-labelledby="deposit-question" class="form-question" role="radiogroup">
+<p class="form-question-title" id="deposit-question">Does your church have a deposit amounting to at least 10–20% of the anticipated house price and an established and stable congregation with regular giving? <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></p>
+<div class="form-options">
+<label><input name="deposit_and_stable_giving" required="" type="radio" value="Yes"/><span>Yes</span></label>
+<label><input name="deposit_and_stable_giving" type="radio" value="No"/><span>No</span></label>
+<label><input name="deposit_and_stable_giving" type="radio" value="Don't know"/><span>Don't know</span></label>
+</div>
+</div>
+<div aria-labelledby="project-leader-question" class="form-question" role="radiogroup">
+<p class="form-question-title" id="project-leader-question">Does your church have a project leader who is experienced in property, finance, and project management? <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></p>
+<div class="form-options">
+<label><input name="experienced_project_leader" required="" type="radio" value="Yes"/><span>Yes</span></label>
+<label><input name="experienced_project_leader" type="radio" value="No"/><span>No</span></label>
+<label><input name="experienced_project_leader" type="radio" value="Don't know"/><span>Don't know</span></label>
+</div>
+</div>
+<div class="form-field"><label for="message">Tell us a little about your situation <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></label><textarea id="message" name="message" placeholder="For example: where you are looking, whether you have identified a property, your current savings / fundraising position and any bank funding already discussed." required=""></textarea></div>
+<label class="form-consent"><input name="consent" required="" type="checkbox" value="Yes"/><span>I agree that Double Honour may use the information I provide to respond to this enquiry. <span aria-hidden="true" class="required-mark">*</span><span class="sr-only"> required</span></span></label>
+<button class="button" type="submit">Send enquiry</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell footer-top">
+<div class="footer-brand">
+<img alt="Double Honour" class="footer-brand-mark" src="assets/double-honour-light-message.png"/>
+<p>Helping churches and church networks<br class="desktop-br"/>purchase property sooner</p>
+</div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="our-service.html">Our service</a>
+<a href="about.html">About us</a>
+<a href="faq.html">FAQs</a>
+<a class="button button-small footer-contact-button" href="contact.html">Contact us</a>
+</div>
+</div>
+<div class="shell footer-bottom">
+<span>© <span data-year=""></span> Double Honour</span>
+<div class="footer-legal">
+<a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+</div>
+</div>
+<div aria-label="Company and regulatory information" class="shell footer-notices">
+<p>Double Honour is a trading name of Housing Affordability Finance (HAF) Ltd, registered in England and Wales (Company No. 12096242) with its registered office at 167–169 Great Portland Street, 5th Floor, London, W1W 5PF.</p>
+<p>The services provided by Double Honour are not regulated by the Financial Conduct Authority. Accordingly, the information on this website is provided for general information purposes only and should not be relied upon as financial, legal, tax or investment advice or as the basis for making any financial or lending decision.</p>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

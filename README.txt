@@ -1,5 +1,5 @@
-DOUBLE HONOUR WEBSITE — V07 BRAND UPDATE
-=========================================
+DOUBLE HONOUR WEBSITE — V48
+===========================
 
 This folder is the full website code based on the supplied haf_site_v06 source.
 No content, section order, functionality or page architecture has been intentionally changed other than the brand update described below.
@@ -22,9 +22,6 @@ BRAND CHANGES COMPLETED
 ITEMS INTENTIONALLY LEFT PENDING USER CONFIRMATION
 1. Domain / URLs
    Existing housingaffordability.co URLs remain in the form redirect until the new domain is confirmed.
-
-2. Contact email / form destination
-   Existing info@housingaffordability.co addresses and the FormSubmit destination remain until the new Double Honour email is confirmed.
 
 3. Legal entity name
    The approved legal-policy wording still identifies Housing Affordability Finance (HAF) Ltd, company number 12096242.
@@ -130,3 +127,88 @@ v33 branding update (20 Sep 2026)
 V46 (30 Sep 2026): based on v45/v41 static core; fixed header changed to white and reduced to 70px desktop / 64px mobile. Body layout and responsive header/footer widths unchanged.
 
 V47 (30 Sep 2026): based on v46; fixed header background changed from pure white to the website's very light cream #FFFDF9. Header remains slim and fixed.
+
+
+V48 (30 Sep 2026): based on v47.
+- Replaced all live Double Honour logo assets with the latest supplied dark/light, background/transparent, with/without-message artwork.
+- Footer message logo reduced and left-aligned to the footer strapline; footer depth tightened after removing the footer email row.
+- Contact page and FormSubmit destination now use info@doublehonour.com; legacy contact-email references were removed.
+- Retired the legacy cookies-policy page and removed its navigation/cross-references throughout the website.
+- Desktop footer navigation now mirrors the header navigation spacing/positioning.
+- Updated the registered-company footer sentence and allowed regulatory copy to use the full footer width without a forced narrow wrap.
+
+V49 (30 Sep 2026): based on v48; exact line breaks added to Individual churches / Church networks & denominations bucket titles on Home and Our service; requested Home emphasis, journey wording/spacing/number sizing, and Start a conversation line breaks applied.
+
+V50 (30 Sep 2026): based on v49. Home > Our service: the RHS five-step journey list now finishes with the same 42px inset from the bottom as the journey intro starts from the top, and the horizontal dividers are capped to the journey-intro width (590px). No other page or mobile layout changes.
+
+V51 (30 Sep 2026): Home Our service only — compressed single-line steps 01/02, retained balanced top/bottom spacing so the matching brown panel shortens with the journey column, and shortened inter-step dividers to end exactly beneath the final “journey:” text via font-aware measurement.
+
+V52 (30 Sep 2026): Our service page refinements to Status quo, The challenge and The funding gap: requested bold emphasis, new Challenge heading, funding-gap terminology/title sizing, updated schematic labels, and larger Legal complexity treatment with gold leading bullets.
+
+V53 (1 Oct 2026): Our service challenge headline punctuation/case; funding-gap title proportion restored; Legal complexity moved up; How we can help headline/copy and bold emphasis updated; CTA line breaks updated.
+
+V54 (1 Oct 2026): Our Service funding-gap headline uses exact requested desktop line breaks; funding schematic stretches to match the left statement height; How we can help headline matches Challenge headline typography; recommendation statement right-aligned on desktop.
+
+V55 (1 Oct 2026): added modest extra spacing above + Legal complexity and changed the Double Honour finance recommendation line to brand gold.
+
+V56 (1 Oct 2026): About / FAQ / Contact editorial refinements; revised Our name quote styling; mission/values/team line breaks and Minjae bullets; subtle brand-arch visuals added to value cards; updated CTA and FAQ/contact line breaks.
+
+V57 (1 Oct 2026): About / Our name quote restored to original vertical-rule layout; quote is gold and italic, with requested line breaks, quotation marks and bold emphasis.
+
+V58 (1 Oct 2026): About / Our name quote restored to vertical rule + oversized pale quote marks; verse remains gold/italic with requested bold emphasis; 1 Timothy 5:17 returned to small 15px citation styling.
+
+V59 (1 Oct 2026): based on v58; About / Our name scripture quote widened slightly to the left and verse type reduced marginally so “especially those” remains together on the second requested line. All quotation marks, vertical rule, colours and citation styling are unchanged.
+
+
+v60 — 6 October 2026
+About Us / Our name: warm brown Manrope quote, thick pale quotation marks placed close to the verse, and small visible scripture citation. Added the supplied transparent church image below the quote with the explanation on the left; stacked composition on mobile. Added quotation marks around the Greek phrase and corrected a typo in “teaching”.
+
+
+v61 — 6 October 2026
+Moved only the right-hand quote, quotation marks and citation down by 28px on desktop using a visual transform; the church image and other layout elements retain their positions. Restored the Our name body copy to the existing muted text colour. Removed the abstract values-card motifs and replaced them with three generated transparent illustrations at 10% opacity behind the text: helping hands (Service), compass (Integrity), young oak tree (Stewardship). The three final PNG assets are included in assets/value-service.png, assets/value-integrity.png and assets/value-stewardship.png. Created with built-in image generation.
+
+
+v62 — 6 October 2026
+Removed the three generated values illustrations and their unused assets. Replaced them with a repeating DH monogram background across the full area of all three value cards. The tile uses the exact monogram from the existing transparent logo, without the Double Honour wordmark. Each 80px tile contains a 52px mark; the pattern is shown at 4% opacity beneath the text. Earlier About Us quote, church image and text-colour refinements remain in place.
+
+
+v63 — 6 October 2026
+Replaced the spaced monogram tile with the supplied tightly packed pattern.png, unchanged. The pattern fills all three values cards at 4% opacity behind the text. Background cover sizing preserves the pattern proportions and prevents tile seams.
+
+
+v64 — 6 October 2026
+Replaced the values-card pattern with the newest supplied pattern(1).png, unchanged, retaining 4% opacity. Reduced the Our name church image from 68% to 52% on desktop, keeping it anchored to the right. Widened the left text column from roughly 57% to 67% of the available grid space and removed forced line breaks within the body copy, so paragraphs occupy fewer lines without changing their wording. Tablet and mobile layouts retain a smaller, right-aligned image.
+
+
+v65 — 6 October 2026
+Adjusted Our name desktop quote typography to 23–25px (body remains 18px) and kept “preaching and teaching.” together on one line. Added desktop breaks before “in 1 Timothy 5:17.” and “when ministers are able...”, and kept “honour practical substance.” together. Raised the right-aligned church image and reduced bottom padding from 88px to 48px to make the section more compact. Tablet and mobile copy reflows naturally.
+
+
+v66 — 6 October 2026
+About Us / Our values: moved the desktop line break to after “working alongside”, so the next line starts “churches with humility”.
+
+
+v67 — 6 October 2026
+About Us / Our name: set the quote to the exact five requested lines, retaining its current font size, styling, emphasis, quotation marks and citation. Small screens allow line wrapping when needed.
+
+
+v68 — 6 October 2026
+Updated Minjae, Evangeline, Simon and Richard bios with the supplied bullet wording. Nicholas and Andrew now have short Lorem Ipsum placeholders. Each card keeps its existing portrait size and styling, with the name and role below the photo in the left column and biography bullets in the right column. Name/role typography is preserved. Existing desktop three-card rows and responsive grid breakpoints remain in place; cards grow vertically with their full text, with wrapping constrained inside each card.
+
+
+v69 — 6 October 2026
+Our name: kept “effective ways of giving that honour practical substance.” together on one desktop line. Reduced subsection bottom padding from 48px to 32px and raised the right-aligned church image a further 12px relative to the section bottom. Smaller screens reflow the phrase naturally to prevent overflow.
+
+
+v70 — 6 October 2026
+Our name: replaced the previous phrase grouping with the exact three desktop lines supplied by the user. Kept the existing body font and colour, allowing this paragraph to use the space below the quote rather than adding extra wrapping. On smaller screens the paragraph reflows naturally.
+
+
+v71 — 6 October 2026
+Added the full stop after “substance.” in the three-line Our name paragraph. Team: split first names and surnames into two lines, retaining their typography; reduced desktop portraits from 132×164px to 116×144px; narrowed the left column from 160px to 132px and the column gap from 16px to 8px, giving the biographies another 36px. Added the supplied Nicholas and Andrew bullet bios and removed the final Lorem Ipsum placeholders. Smaller mobile portraits and columns follow the same layout. Existing desktop three-card rows remain unchanged.
+
+V72: Restored the original v61 team card layout, with biographies below the photo/name header. Preserved all six updated biographies and roles. Names remain on two lines to the right of the original-sized portraits; the name/role group is shifted down by 10px. No other website sections changed.
+
+V73: Lowered the Our name church image to align its bottom edge with the colour-change boundary at the next subsection.
+
+V74: Restored Our name bottom spacing to the standard 88px desktop section spacing, keeping the church image anchored at bottom: 0. Slightly enlarged the desktop image from 52% (max 800px) to 54% (max 830px). On phones, added the standard 64px spacing before the image so it continues to meet the next section boundary.
