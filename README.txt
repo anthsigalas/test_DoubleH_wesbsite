@@ -1,4 +1,4 @@
-DOUBLE HONOUR WEBSITE — V48
+DOUBLE HONOUR WEBSITE — V77
 ===========================
 
 This folder is the full website code based on the supplied haf_site_v06 source.
@@ -214,3 +214,10 @@ V73: Lowered the Our name church image to align its bottom edge with the colour-
 V74: Restored Our name bottom spacing to the standard 88px desktop section spacing, keeping the church image anchored at bottom: 0. Slightly enlarged the desktop image from 52% (max 800px) to 54% (max 830px). On phones, added the standard 64px spacing before the image so it continues to meet the next section boundary.
 
 V75: Mobile-only refinements (up to 720px): added hidden-on-desktop spaces where desktop line breaks disappear, prevented text/grid overflow, allowed the quotation to wrap naturally, hid the Our name church image and restored 64px bottom spacing, matched Legal complexity to the recommendation statement size, and increased Sources explanatory notes to 18px body text. Responsive profile headers accommodate narrow screens. Browser validation with Manrope covered all eight content pages at 320, 375, 390, 430 and 720px, with FAQ answers expanded. Desktop geometry and typography matched v74 at 1280 and 1440px for all eight pages.
+
+
+V76 — 13 October 2026
+Mobile-only: standardised body text across selected About Us sections and the funding schematic to 16px. Replaced the confusing serial funding-source explanations with mobile-only source cards grouping Church savings, Bank loans and The funding gap. Desktop source diagram retained.
+
+V77 — 13 October 2026
+Audited V76 for heading and body-copy consistency. Mobile-only type hierarchy applied consistently across pages: page titles 40px, major section headings 34px, subgroup titles 26px, card headings 24px, ordinary body copy 16px. Aligned previously overlooked team biography, service card, and supporting copy sizes. Funding schematic's new source-card headings now have the correct heading size rather than matching body text. Replaced decorative CSS-generated SOURCES label with accessible text in the mobile stack. No desktop typography/layout changes. Audited mobile widths 320–720px and preserved desktop presentation at 721px and above.

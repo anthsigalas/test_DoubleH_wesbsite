@@ -2635,3 +2635,158 @@ html {
   }
   #team .team-name-line { white-space: normal; }
 }
+
+/* v76 — 13 Oct 2026: mobile-only typography alignment and funding-gap redesign. */
+.mobile-source-stack { display: none; }
+
+@media (max-width: 720px) {
+  /* Use one consistent body-copy scale across About us and the mobile service page. */
+  #our-name .about-name-body p,
+  #mission .about-copy p,
+  #values .about-wide-heading p:not(.eyebrow),
+  #values .value-card p,
+  #team .about-wide-heading p:not(.eyebrow),
+  #funding-gap .source-detail,
+  #funding-gap .mobile-source-card li,
+  #funding-gap .legal-complexity-points p {
+    font-size: 16px !important;
+    line-height: 1.65;
+  }
+
+  /* Mobile funding gap: each explanation now sits directly with the source it explains. */
+  #funding-gap .funding-schematic {
+    padding: 24px;
+  }
+  #funding-gap .scheme-sources,
+  #funding-gap .source-detail-grid {
+    display: none;
+  }
+  #funding-gap .mobile-source-stack {
+    display: grid;
+    gap: 14px;
+    margin-top: 22px;
+  }
+  #funding-gap .mobile-source-stack::before {
+    content: "SOURCES";
+    display: block;
+    margin-bottom: -2px;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .14em;
+  }
+  #funding-gap .mobile-source-card {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--white);
+  }
+  #funding-gap .mobile-source-card h3 {
+    margin: 0;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  #funding-gap .mobile-source-card ul {
+    margin: 0;
+    padding: 16px 20px 18px 36px;
+  }
+  #funding-gap .mobile-source-card li + li {
+    margin-top: 10px;
+  }
+  #funding-gap .mobile-source-savings h3 {
+    background: #F0E5D4;
+    color: var(--brown);
+  }
+  #funding-gap .mobile-source-bank h3 {
+    background: #D7C3A4;
+    color: var(--brown);
+  }
+  #funding-gap .mobile-source-gap h3 {
+    background: var(--brown);
+    color: var(--cream);
+  }
+}
+
+
+/* v77 — verified mobile type hierarchy and accessible funding-source label.
+   Changes in this block apply ONLY at mobile widths; desktop styles are unchanged. */
+@media (max-width: 720px) {
+  /* Page hero headings — one scale on Home, About, Our service, FAQ and Contact. */
+  .hero h1,
+  .inner-hero h1,
+  .service-hero h1,
+  .faq-hero h1,
+  .contact-intro h1,
+  .legal-page h1,
+  .thanks h1 {
+    font-size: 40px;
+    line-height: 1.09;
+  }
+
+  /* Main section headings — same scale, including FAQ sections and footer CTAs. */
+  .section-heading h2,
+  #our-name .about-name-title h2,
+  #mission .about-grid h2,
+  #funding-gap .funding-gap-title,
+  .service-solution-heading .service-solution-title,
+  .contact-section h2,
+  .faq-group h2 {
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: -.035em;
+  }
+
+  /* Subsections / groups (between section headers and card titles). */
+  #team .team-group-heading h3,
+  #funding-gap .legal-complexity-copy h3 {
+    font-size: 26px;
+    line-height: 1.22;
+  }
+
+  /* Card headings across the site, including the previously undersized funding cards. */
+  .support-card h3,
+  .funding-panel h3,
+  .service-pressure-card h3,
+  .service-challenge-content h2,
+  .service-support-card h3,
+  .service-support-card .client-type-title,
+  #values .value-card h3,
+  #funding-gap .mobile-source-card h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  /* Ordinary supporting paragraphs and list copy use the same 16px scale.
+     Scripture quotes, metrics, navigation labels, testimonials and display
+     statements retain their intentional emphasis. */
+  .support-card-body > p:not(.support-card-purpose),
+  .funding-panel p:not(.card-kicker),
+  .journey-list p,
+  .impact-copy p,
+  #team .team-bullets li,
+  .service-challenge-content li,
+  .faq-hero > .shell > p:not(.eyebrow),
+  .contact-intro > p:not(.eyebrow),
+  .contact-grid p:not(.eyebrow),
+  .service-hero .service-hero-subtitle {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* Funding diagram: Sources is now actual visible text, not pseudo-content. */
+  #funding-gap .mobile-source-stack::before {
+    content: none;
+    display: none;
+  }
+  #funding-gap .mobile-sources-label {
+    margin: 0 0 -2px;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .14em;
+  }
+}
