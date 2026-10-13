@@ -1,4 +1,4 @@
-DOUBLE HONOUR WEBSITE — V77
+DOUBLE HONOUR WEBSITE — V78
 ===========================
 
 This folder is the full website code based on the supplied haf_site_v06 source.
@@ -221,3 +221,10 @@ Mobile-only: standardised body text across selected About Us sections and the fu
 
 V77 — 13 October 2026
 Audited V76 for heading and body-copy consistency. Mobile-only type hierarchy applied consistently across pages: page titles 40px, major section headings 34px, subgroup titles 26px, card headings 24px, ordinary body copy 16px. Aligned previously overlooked team biography, service card, and supporting copy sizes. Funding schematic's new source-card headings now have the correct heading size rather than matching body text. Replaced decorative CSS-generated SOURCES label with accessible text in the mobile stack. No desktop typography/layout changes. Audited mobile widths 320–720px and preserved desktop presentation at 721px and above.
+
+
+V78 — 13 October 2026
+- Mobile funding-gap breakdown: reduced Church savings, Bank loans and The funding gap headings from 24px to 16px to match Property value.
+- Added compact 01 / 02 / 03 numbered markers to show the full composition in one sequence.
+- Changed the mobile-only group label from SOURCES to SOURCES & SHORTFALL to distinguish available funding from the unmet gap.
+- Desktop layout and all other sections/pages untouched.
